@@ -13,5 +13,12 @@ services:
       - '--web.enable-lifecycle'
     restart: unless-stopped
 
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3030:3000"
+    restart: unless-stopped
+
 volumes:
   prometheus_data:
