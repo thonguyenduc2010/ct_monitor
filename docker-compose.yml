@@ -16,9 +16,6 @@ services:
     ports:
       - "3030:3000"
     restart: unless-stopped
-    environment:
-      - GF_SECURITY_ADMIN_USER=myuser
-      - GF_SECURITY_ADMIN_PASSWORD=mypassword
     env_file:
       - .env
 
